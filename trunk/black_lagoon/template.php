@@ -18,14 +18,25 @@ function black_lagoon_preprocess_page(&$vars) {
     _black_lagoon_install();
   }
   //to print the banners
-  $banners = black_lagoon_show_banners();
+  /*$banners = black_lagoon_show_banners();
   $vars['banner'] = $banners;
   if(drupal_is_front_page()){
     drupal_add_js(path_to_theme() .'/js/slide.js', 'file');
     
-  }
+  }*/
   //$vars['main_links_tree'] = menu_tree(variable_get('menu_main_links_source', 'main-menu'));
   //print render ( $vars['main_links_tree']);
+	$result = db_select('node', 'n')
+    ->fields('n')
+    ->condition('type', 'imagen_para_slider' ,'=')
+    ->execute()
+    ->fetchAllAssoc('nid');
+	if($result)
+	{
+		foreach ($result as $key => $value) {
+			$vars['slides'][$key] = node_load($key);
+		}
+	}
 }
 
 /**
