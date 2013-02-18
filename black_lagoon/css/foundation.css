@@ -235,7 +235,9 @@ div.slider-nav span.left {
     left: 50%;
 	  margin-left: -50px;
     bottom:-8px;
-    padding: 0; }
+    padding: 0; 
+    z-index: 5;
+   }
 
 .orbit-bullets li {
     float: left;   

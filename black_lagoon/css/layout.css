@@ -25,6 +25,7 @@ body {
 	margin: 0 auto;	
 	padding: 0;
 	width: 100%;
+	position: relative;
 }
 .logo {
 	margin: 0 auto;
@@ -44,6 +45,8 @@ body {
 	background-color: #2E3192;
 	position: relative;
 	z-index: 100;
+	/*-webkit-box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.5);*/
 }
 #messages {
 	width:100%;
@@ -96,17 +99,23 @@ body {
 
 #footer {
 	width:100%;
-	margin:20px 0 0 0;
+	margin:50px 0 0 0;
 	padding:0;
 	/*border-top:1px solid #464040;*/
 	min-height:50px;
 	text-align:center;
 	font-family: Tahoma;
-  font-size: 18px;
-  padding-top:10px;
-  background-color:#FBB03B;
-  color:white;
-
+	font-size: 18px;
+	padding-top:10px;
+	background-color:#FBB03B;
+	color:white;
+	padding-bottom: 10px;
+	border-top-color: black;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-bottom-color: black;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
 }
 
 #content .sidebar-first,#content .sidebar-second {
