@@ -20,6 +20,7 @@ body {
 	min-height:500px;
 	padding-top:35px;
 	margin: 10px auto;
+	position: relative;
 }
 #header {
 	margin: 0 auto;	
