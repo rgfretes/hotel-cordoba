@@ -373,6 +373,62 @@ input:-moz-placeholder,textarea:-moz-placeholder {
 	position:relative;
 }
 
+#hoja-bienvenida b{
+	border-bottom-left-radius: 100px;
+	border-bottom-right-radius: 100px;
+	border-bottom-style: solid;
+	padding-bottom: 10px;
+	padding-left: 30px;
+	padding-right: 30px;
+	text-shadow: 0.1em 0.1em rgba(50, 93, 231, 0.58);
+}
+
+#ubicacion-centrica{
+	position: absolute;
+	top: 78px;
+	right: 6px;
+	z-index: 2;
+	color: white;
+	font-family: arial;
+	font-weight: bold;
+	text-align: center;
+}
+
+.twelve-point-star {
+	height: 100px;
+	width: 100px;
+	background: rgb(160, 49, 49);
+	position: absolute;
+	top: 50px;
+	right: 0px;
+	z-index: 1;
+}
+.twelve-point-star:before {
+   height: 100px;
+   width: 100px;
+   background: rgb(160, 49, 49);
+   content:"";
+   position: absolute;
+   /* Rotate */
+   -moz-transform: rotate(30deg);
+   -webkit-transform: rotate(30deg);
+   -ms-transform: rotate(30deg);
+   -o-transform: rotate(30deg);
+   transform: rotate(30deg);
+}
+.twelve-point-star:after {
+   height: 100px;
+   width: 100px;
+   background: rgb(160, 49, 49);
+   content:"";
+   position: absolute;
+   /* Rotate */
+   -moz-transform: rotate(-30deg);
+   -webkit-transform: rotate(-30deg);
+   -ms-transform: rotate(-30deg);
+   -o-transform: rotate(-30deg);
+   transform: rotate(-30deg);
+}
 .estilo-texto{
 	color:orange;
 	font-size:24px;
@@ -419,7 +475,7 @@ input:-moz-placeholder,textarea:-moz-placeholder {
 	padding-bottom: 50px;
 }*/
 
-.active {
+.menu .active {
 	background-color: orange;
 	color: white;
 	padding: 20px;
