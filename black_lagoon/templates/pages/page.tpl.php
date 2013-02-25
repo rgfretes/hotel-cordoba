@@ -70,9 +70,6 @@
 			}
 		?>
 		<div class="<?php echo $maincontent; ?>">
-				<?php if ($title): ?>
-					<h1><?php print $title; ?></h1>
-				<?php endif; ?>
 				<?php if ($tabs): ?>
 					<div class="tabs">
 						<?php print render($tabs); ?>
