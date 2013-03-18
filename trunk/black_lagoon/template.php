@@ -33,4 +33,18 @@ function black_lagoon_preprocess_node(&$vars)
 		}
 		
 	}
+	
+	$result = db_select('node', 'n')
+    ->fields('n')
+    ->condition('type', 'imagen_para_galeria' ,'=')
+    ->execute()
+    ->fetchAllAssoc('nid');
+	if($result)
+	{
+		foreach ($result as $key => $value) {
+			$vars['galeria'][$key] = node_load($key);
+			//var_dump($vars['servicios'][$key]) ;
+		}
+		
+	}
 }

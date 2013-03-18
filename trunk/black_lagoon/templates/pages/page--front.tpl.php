@@ -1,6 +1,6 @@
 <?php
 
-	/**
+	/** 
 	* @file
 	* Black Lagoon Theme
 	* Created by Zyxware Technologies
@@ -11,9 +11,7 @@
 <div id="wrapper">
 	<div class="twelve-point-star">
 	</div>
-	<div id="ubicacion-centrica">
-		Ubicacion<br/>centrica!
-	</div>
+
 	<div id="header">
 		<div class="logo">
 			<?php if ($logo): ?>
@@ -53,7 +51,9 @@
 	
 	<div id="content">
 		<div class="pix_diapo">
-            <?php foreach($slides as $s) print(drupal_render(node_view($s))); ?>
+			<?php if(isset($slides)) : ?>
+            	<?php foreach($slides as $s) print(drupal_render(node_view($s))); ?>
+			<?php endif ?>
 		</div>
 	</div>
 	<div id="contenedor-sombra-arriba">
