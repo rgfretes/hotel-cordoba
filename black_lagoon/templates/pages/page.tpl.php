@@ -12,11 +12,7 @@
 </div>
 <div id="wrapper">
 	<div class="twelve-point-star">
-	</div>
-	<div id="ubicacion-centrica">
-		Ubicacion<br/>centrica!
-	</div>
-	
+	</div>	
 	
 	<div id="header">
 		<div class="logo">

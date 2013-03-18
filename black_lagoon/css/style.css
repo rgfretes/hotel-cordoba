@@ -385,7 +385,7 @@ input:-moz-placeholder,textarea:-moz-placeholder {
 
 #ubicacion-centrica{
 	position: absolute;
-	top: 78px;
+	top: 30px;
 	right: 6px;
 	z-index: 2;
 	color: white;
@@ -394,41 +394,6 @@ input:-moz-placeholder,textarea:-moz-placeholder {
 	text-align: center;
 }
 
-.twelve-point-star {
-	height: 100px;
-	width: 100px;
-	background: rgb(160, 49, 49);
-	position: absolute;
-	top: 50px;
-	right: 0px;
-	z-index: 1;
-}
-.twelve-point-star:before {
-   height: 100px;
-   width: 100px;
-   background: rgb(160, 49, 49);
-   content:"";
-   position: absolute;
-   /* Rotate */
-   -moz-transform: rotate(30deg);
-   -webkit-transform: rotate(30deg);
-   -ms-transform: rotate(30deg);
-   -o-transform: rotate(30deg);
-   transform: rotate(30deg);
-}
-.twelve-point-star:after {
-   height: 100px;
-   width: 100px;
-   background: rgb(160, 49, 49);
-   content:"";
-   position: absolute;
-   /* Rotate */
-   -moz-transform: rotate(-30deg);
-   -webkit-transform: rotate(-30deg);
-   -ms-transform: rotate(-30deg);
-   -o-transform: rotate(-30deg);
-   transform: rotate(-30deg);
-}
 .estilo-texto{
 	color:orange;
 	font-size:24px;
@@ -585,3 +550,51 @@ input:-moz-placeholder,textarea:-moz-placeholder {
 	border-style: none;
 }
 */
+
+#mapa {
+	position: relative;
+	z-index: 4;
+	padding-left: 18px;
+	padding-right: 18px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	background-color: white;
+	/*padding: 20px;*/
+}
+
+.field-name-field-ubicacion {
+	border-style: solid;
+	border-color: grey;
+	border-width: 1px;
+}
+
+#node-18 {
+	margin-left: -40px;
+	margin-right: -40px;
+	overflow: visible;
+}
+
+#informacion {
+	margin-top: 40px;
+	/*text-align: center;*/
+}
+
+.info-mapa {
+	background-image: url('../images/fondo-ubicacion.png');
+	height: 70px;
+	margin-top: 15px;
+	color: white; 
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 200px;
+}
+
+.info-mapa div {
+	padding-top: 20px;
+}
+
+#galleria {
+	width: 920px; 
+	height: 500px; 
+	background: #000;
+}
